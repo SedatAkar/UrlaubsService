@@ -1,0 +1,449 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Urlaubs-Service.controller.View1">
+<App id="__app5">
+    <pages>
+        <Page title="Urlaubs-Service" id="__page9">
+        <content>
+            <TileContainer editable="true" allowAdd="true" id="__container0">
+            <tiles>
+                <CustomTile id="GiftTile" press="openGiftSite">
+                <content>
+                    <StandardTile title="Geschenk" icon="sap-icon://customer" activeIcon="sap-icon://present" infoState="Success" id="__tile8" removable="false"/>
+                </content>
+                </CustomTile>
+                <StandardTile xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Spende" icon="sap-icon://crm-sales" activeIcon="sap-icon://present" id="DonationTile" removable="false"/>
+                <StandardTile xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Reise-Nachsendung" icon="sap-icon://action" activeIcon="sap-icon://present" infoState="Success" id="TravelForwardingTile" press="openTravelForwardingTile" removable="false"/>
+                <StandardTile xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Sammlung" icon="sap-icon://retail-store" activeIcon="sap-icon://present" infoState="Success" id="CollectTile" press="openCollectTile" removable="false"/>
+                <StandardTile xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="e-Paper" icon="sap-icon://internet-browser" activeIcon="sap-icon://present" infoState="Success" id="ePaperTile" press="openEPaperTile" removable="false"/>
+            </tiles>
+            </TileContainer>
+        </content>
+        </Page><Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Geschenk" id="__page11">
+            <content>
+                <Panel id="__panel0">
+                    <content>
+                        <Text text="Bitte geben Sie hier die Adresse der Person, die Sie beschenken möchten ein" id="__text0"/>
+                    </content>
+                </Panel>
+                <Panel id="__panel1">
+                <content>
+                    <Input width="100%" id="PrenameInput" placeholder="Vorname" name="Prename"/>
+                    <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" id="SurnameInput" placeholder="Name" name="Name"/>
+                    <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="75%" id="StreetInput" placeholder="Straße" name="Street"/>
+                    <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="25%" id="HousenumberInput" placeholder="Nr." name="Housenumber"/>
+                    <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="32%" id="ZipcodeInput" placeholder="PLZ" name="ZIPCode"/>
+                    <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="68%" id="CityInput" placeholder="Ort" name="City"/>
+                </content>
+                </Panel>
+            </content>
+        <footer>
+            <Bar id="__bar0">
+            <contentRight>
+                <Button text="Weiter" width="100px" id="GiftNextButton" press="openGiftTravelDurationSite" type="Accept"/>
+            </contentRight>
+            </Bar>
+        </footer>
+        <headerContent>
+        </headerContent>
+        <customHeader>
+            <Bar id="__bar3">
+                <contentMiddle>
+                    <Text text="Geschenk" id="headlineGift"/>
+                </contentMiddle>
+            <contentLeft>
+                <Button width="100px" id="__button5" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+            </contentLeft>
+            </Bar>
+        </customHeader>
+        </Page>
+        <Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Geschenk" id="__page11_copy">
+            <content>
+                <Panel id="__panel0_copy">
+                    <content>
+                        <Text text="Bitte geben Sie Ihre Reisedauer an" id="__text0_copy"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel1_copy">
+                    
+                <content>
+                    
+                    <Label text="Reisebeginn:" width="100%" id="__label0"/>
+                    
+                    <DatePicker width="100%" id="BeginOfTravelPicker"/>
+                    
+                </content>
+                    
+                </Panel>
+                <Panel xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__panel1_copy2">
+                    <content>
+                        <Label text="Reiseende:" width="100%" id="__label0_copy"/>
+                        <DatePicker width="100%" id="EndOfTravelPicker"/>
+                        </content>
+                    
+                </Panel>
+                </content>
+            <footer>
+                <Bar id="__bar0_copy">
+                    <contentRight>
+                        <Button text="Weiter" width="100px" id="GiftNextButton_copy" press="openGiftTravelDurationSite" type="Accept"/>
+                        
+                    </contentRight>
+                    
+                </Bar>
+                
+            </footer>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy">
+                    <contentMiddle>
+                        <Text text="Geschenk" id="headlineGift_copy"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            </Page>
+        <Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Geschenk" id="__page11_copy2">
+            <content>
+                <Panel id="__panel0_copy2">
+                    <content>
+                        <Text text="Bitte überprüfen Sie Ihre Angaben und falls Sie etwas ändern möchten gehen Sie zurück!" id="__text0_copy2"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel1_copy3">
+                    
+                <content>
+                    
+                    <Label text="Vorname" width="100%" id="ShowPrename"/>
+                    
+                    <Label text="Nachname" width="100%" id="ShowSurname"/>
+                    
+                    <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Straße" width="100%" id="showStreet"/>
+                    
+                    <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Hausnummer" width="100%" id="ShowHouseNumber"/>
+                    
+                    <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Postleitzahl" width="100%" id="showZIPCode"/>
+                    
+                    <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Ort" width="100%" id="ShowCity"/>
+                    
+                </content>
+                    
+                </Panel>
+                </content>
+            <footer>
+                <Bar id="__bar0_copy2">
+                    <contentRight>
+                        <Button text="Bestätigen" width="100px" id="GiftNextButton_copy2" press="openGiftTravelDurationSite" type="Accept"/>
+                        
+                    </contentRight>
+                    
+                </Bar>
+                
+            </footer>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy2">
+                    <contentMiddle>
+                        <Text text="Geschenk" id="headlineGift_copy2"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy2" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            </Page>
+        <Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Spende" id="__page11_copy3">
+            <content>
+                <Panel id="__panel0_copy3">
+                    <content>
+                        <Text text="Bitte wählen Sie aus, ob Sie eine von uns vorgeschlagene Institution wählen möchten, oder ob Sie eine eigene Institution hinzufügen möchten." id="__text0_copy3"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel2">
+                    <content>
+                        <Button text="Institution auswählen" width="100%" id="buttonToChooseInstitution" press="goToChooseInstitution"/>
+                    </content>
+                </Panel>
+                <Panel xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__panel2_copy">
+                    <content>
+                        <Button xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Eigene Institution vorschlagen" width="100%" id="buttonToCreateOwnInstitution"/>
+                    </content>
+                </Panel>
+                </content>
+            <footer>
+                <Bar id="__bar0_copy3">
+                    
+                </Bar>
+                
+            </footer>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy3">
+                    <contentMiddle>
+                        <Text text="Spende" id="headlineSpende"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy3" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            </Page>
+        <Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Geschenk" id="InstitutionChoose">
+            <content>
+                <Panel id="__panel0_copy4">
+                    <content>
+                        <Text text="Bitte wählen Sie aus, ob Sie eine von uns vorgeschlagene Institution wählen möchten, oder ob Sie eine eigene Institution hinzufügen möchten." id="__text0_copy4"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel2_copy2">
+                    <content>
+                        <ActionSelect xmlns:sap.ui.core="sap.ui.core" selectedItem="Element sap.ui.core.ListItem#__item3" selectedItemId="__item3" id="__select0" width="100%" name="Institution auswählen" icon="sap-icon://insurance-house">
+                            <items>
+                                <sap.ui.core:ListItem text="List Item 1" key="item1" id="__item3"/>
+                                <sap.ui.core:ListItem text="List Item 2" key="item2" id="__item4"/>
+                                <sap.ui.core:ListItem text="List Item 3" key="item3" id="__item5"/></items>
+                        </ActionSelect>
+                        <Button text="Institution auswählen" width="100%" id="buttonToChooseInstitution_copy2"/>
+                        
+                    </content>
+                    
+                </Panel>
+                </content>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy4">
+                    <contentMiddle>
+                        <Text text="Spende" id="headlineSpende_copy"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy4" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            <footer>
+                <Bar xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__bar0_copy4">
+                    <contentRight>
+                        <Button text="Bestätigen" width="100px" id="GiftNextButton_copy3" press="openGiftTravelDurationSite" type="Accept"/>
+                        
+                    </contentRight>
+                    
+                </Bar>
+            </footer>
+            </Page>
+        <Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Institution vorschlagen" id="__page11_copy4">
+            <content>
+                <Panel id="__panel0_copy5">
+                    <content>
+                        <Text text="Bitte geben Sie hier die Adresse der Institution ein, die Sie vorschlagen möchten" id="__text0_copy5"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel1_copy4">
+                    <content>
+                        <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" id="SurnameInput_copy" placeholder="Name der Institution" name="Name"/>
+                        <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="75%" id="StreetInput_copy" placeholder="Straße" name="Street"/>
+                        <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="25%" id="HousenumberInput_copy" placeholder="Nr." name="Housenumber"/>
+                        <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="32%" id="ZipcodeInput_copy" placeholder="PLZ" name="ZIPCode"/>
+                        <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="68%" id="CityInput_copy" placeholder="Ort" name="City"/>
+                        </content>
+                    
+                </Panel>
+                </content>
+            <footer>
+                <Bar id="__bar0_copy5">
+                    <contentRight>
+                        <Button text="Bestätigen" width="100px" id="GiftNextButton_copy4" press="openGiftTravelDurationSite" type="Accept"/>
+                        
+                    </contentRight>
+                    
+                </Bar>
+                
+            </footer>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy5">
+                    <contentMiddle>
+                        <Text text="Institution vorschlagen" id="headlineGift_copy3"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy5" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            </Page>
+        <Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Geschenk" id="__page11_copy6">
+            <content>
+                <Panel id="__panel0_copy7">
+                    <content>
+                        <Text text="Bitte überprüfen Sie Ihre Angaben und falls Sie etwas ändern möchten gehen Sie zurück!" id="__text0_copy7"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel1_copy6">
+                    <content>
+                        <Label text="Name der Institution" width="100%" id="ShowSurname_copy2"/>
+                        <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Straße" width="100%" id="showStreet_copy2"/>
+                        <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Hausnummer" width="100%" id="ShowHouseNumber_copy2"/>
+                        <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Postleitzahl" width="100%" id="showZIPCode_copy2"/>
+                        <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Ort" width="100%" id="ShowCity_copy2"/>
+                        </content>
+                    
+                </Panel>
+                </content>
+            <footer>
+                <Bar id="__bar0_copy7">
+                    <contentRight>
+                        <Button text="Bestätigen" width="100px" id="GiftNextButton_copy6" press="openGiftTravelDurationSite" type="Accept"/>
+                        
+                    </contentRight>
+                    
+                </Bar>
+                
+            </footer>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy7">
+                    <contentMiddle>
+                        <Text text="Spende prüfen" id="headlineGift_copy5"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy7" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            </Page><Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Geschenk" id="__page11_copy7">
+            <content>
+                <Panel id="__panel0_copy8">
+                    <content>
+                        <Text text="Bitte geben Sie Ihre Reisedauer an" id="__text0_copy8"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel1_copy7">
+                    <content>
+                        <Label text="Reisebeginn:" width="100%" id="__label0_copy2"/>
+                        <DatePicker width="100%" id="BeginOfTravelPicker_copy"/>
+                        </content>
+                    
+                </Panel>
+                <Panel xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__panel1_copy8">
+                    <content>
+                        <Label text="Reiseende:" width="100%" id="__label0_copy3"/>
+                        <DatePicker width="100%" id="EndOfTravelPicker_copy"/>
+                        </content>
+                    
+                </Panel>
+                </content>
+            <footer>
+                <Bar id="__bar0_copy8">
+                    <contentRight>
+                        <Button text="Bestätigen" width="100px" id="GiftNextButton_copy7" press="openGiftTravelDurationSite" type="Accept"/>
+                        
+                    </contentRight>
+                    
+                </Bar>
+                
+            </footer>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy8">
+                    <contentMiddle>
+                        <Text text="Umstellung auf ePaper" id="headlineGift_copy6"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy8" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            </Page>
+        <Page xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" title="Geschenk" id="__page11_copy8">
+            <content>
+                <Panel id="__panel0_copy9">
+                    <content>
+                        <Text text="Bitte geben Sie Ihre Reisedauer an" id="__text0_copy9"/>
+                        
+                    </content>
+                    
+                </Panel>
+                <Panel id="__panel1_copy9">
+                    <content>
+                        <Label text="Reisebeginn:" width="100%" id="__label0_copy4"/>
+                        <DatePicker width="100%" id="BeginOfTravelPicker_copy2"/>
+                        </content>
+                    
+                </Panel>
+                <Panel xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__panel1_copy10">
+                    <content>
+                        <Label text="Reiseende:" width="100%" id="__label0_copy5"/>
+                        <DatePicker width="100%" id="EndOfTravelPicker_copy2"/>
+                        </content>
+                    
+                </Panel>
+                </content>
+            <footer>
+                <Bar id="__bar0_copy9">
+                    <contentRight>
+                        <Button text="Bestätigen" width="100px" id="GiftNextButton_copy8" press="openGiftTravelDurationSite" type="Accept"/>
+                        
+                    </contentRight>
+                    
+                </Bar>
+                
+            </footer>
+            <headerContent>
+                </headerContent>
+            <customHeader>
+                <Bar id="__bar3_copy9">
+                    <contentMiddle>
+                        <Text text="Sammlung" id="headlineGift_copy7"/>
+                        
+                    </contentMiddle>
+                    <contentLeft>
+                        <Button width="100px" id="__button5_copy9" activeIcon="sap-icon://nav-back" icon="sap-icon://nav-back"/>
+                        
+                    </contentLeft>
+                    </Bar>
+                
+            </customHeader>
+            </Page></pages>
+</App>
+</mvc:View>
